@@ -41,7 +41,7 @@ public class QuakesListActivity extends AppCompatActivity {
     }
 
     void getAllQuakes(String url) {
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 EarthQuake earthQuake = new EarthQuake();
